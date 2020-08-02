@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Codecademy HTML Notes</title>
+    </header>
+    <body>
+        <h1>The Basics of HTML</h1>
+        <p> HTML is the skeleton of all web pages. HTML stands for Hyper Text Markup Language. A markup language is a computer
+            language that defines the structure and presentation of raw text. Hypertext is text displayed on a computer or 
+            device that provides access to other text through links, also known as hyperlinks. Learning HTML is the first step
+            in creating websites.
+        </p>
+        <h2>Basic Structure</h2>
+        <p>HTML is composed of elements. These elements structure the webpage and define its content. The diagram below displays
+           an HTML paragraph element. It is made up of an opening tag, the content, and a closing tag. When an element is 
+           contained inside another element, it is considered the child of that element. The child element is said to be nested
+           inside of the parent element. Since there can be multiple levels of nesting, this analogy can be extended to 
+           grandchildren, great-grandchildren, and beyond. The relationship between elements and their ancestor and descendent
+           elements is known as hierarchy. Understanding HTML hierarchy is important because child elements can inherit behavior
+           and styling from their parent element.
+        </p>
+        <img src="file:///D:/DAVEDATA/ProgDev/The%20Web%20and%20HTML/Codecademy_HTML/basic_html_tag_structure.jpg"
+         width="571" height="318" alt="HTML Tag Structure">
+        <h3>A very basic web page takes this form:</h3>
+        <p> <strong>
+            &lt!DOCTYPE html&gt<br>
+            &lthtml&gt<br><br>
+            &ltheader&gt<br>
+            &lttitle&gtThis text in the tab&lt/title&gt<br>
+            &lt/header&gt<br><br>
+            &ltbody&gt<br>
+            &lth1&gtThis is a main heading&lt/h1&gt<br>
+            &ltp&gtThis is in a paragraph&lt/p&gt<br>
+            &lth2&gtThis is a smaller header&lt/h2&gt<br>
+            &ltp&gt<br>
+            This is in a paragraph&ltbr&gt<br>
+            Line breaks are made with the single tag &ltbr&gt<br>
+            if the paragraph doesn't end it<br>
+            &lt/p&gt<br>
+            &lt/body&gt<br><br>
+            &ltfooter&gt<br>
+            &lt/footer&gt<br><br>
+            &lt/html&gt
+        </strong></p>
+        <p> The first html tags indicate what kind of file this is to a browser that displays it.<br>
+            The header section generally contains the title and maybe some general information.<br>
+            The body contains the content of the web page, the basic structure of which is usually composed of headings and
+            paragraphs among other things. Headings are used to title sections and range from large <strong>&lth1&gt</strong> 
+            to small <strong>&lth6&gt</strong>.<br>
+            The footer often consists of links to other pages, email adresses, and other general info.</p>
+        <p> The <strong>&ltdiv&gt&lt/div&gt</strong> tags are often used to "divide" the page into sections.<br>
+            If we want to expand an element’s tag, we can do so using an attribute. Attributes are content added to the 
+            opening tag of an element and can be used in several different ways, from providing information to changing 
+            styling. Attributes are made up of two parts: the name of the attribute, and the value of the attribute. One 
+            commonly used attribute is the <em>id</em>. We can use the <em>id</em> attribute to specify different content 
+            (such as <strong>&ltdiv&gts</strong>) and is really helpful when you use an element more than once. <em>id</em>s 
+            have several different purposes in HTML, but for now, we’ll focus on how they can help us identify content on our 
+            page.<br><br>
+            <strong>
+            &ltdiv id="intro"&gt<br>
+            &lth1&gtIntroduction&lt/h1&gt<br>
+            &lt/div&gt
+            </strong>
+        </p>
+        <p> <strong>&ltp&gt&lt/p&gt</strong> tags are used to contain blocks (paragraphs) of plain text. <strong>
+            &ltspan&gt&lt/span&gt</strong> tags contains short pieces of text or other HTML. They are used to separate small 
+            pieces of content that are on the same line as other content. It’s best to use a <strong>&ltspan&gt</strong> element 
+            when you want to target a specific piece of content with an <em>id</em> that is inline, or on the same line as other 
+            text.</p>
+        <h2>Styling Text</h2>
+        <p> The <strong>&ltem&gt&lt/em&gt</strong> tags emphasize text (usually <em>italics</em>). <strong>
+            &ltstrong&gt&lt/strong&gt</strong> tags produce <strong>bold</strong> text.</p>
+        <h2>Lists</h2>
+        <p> An unordered list creates a list with bullets. The <strong>&ltul&gt&lt/ul&gt</strong> tags surround the entire 
+            list, while each line item uses the <strong>&ltli&gt&lt/li&gt</strong> tags like this:<br><br>
+            <strong>
+            &ltul&gt<br>
+            &ltli&gtLimes&lt/li&gt<br>
+            &ltli&gtTortillas&lt/li&gt<br>
+            &ltli&gtChicken&lt/li&gt<br>
+            &lt/ul&gt<br><br>
+            </strong>
+            to produce:
+            <ul>
+                <li>Limes</li>
+                <li>Tortillas</li>
+                <li>Chicken</li>
+            </ul>
+            An ordered list is numbered and is created with the same format except for <strong>&ltol&gt&lt/ol&gt</strong> tags.
+        </p>
+        <h2>Images</h2>
+        <p> The <strong>&ltimg&gt</strong> tag allows you to add an image to a web page. Most elements require both opening and 
+            closing tags, but the <strong>&ltimg&gt</strong> tag is a self-closing tag. Note that the end of the 
+            <strong>&ltimg&gt</strong> tag has a forward slash / before the &gt.<br>
+            The <strong>&ltimg&gt</strong> tag has a required attribute called <em>src</em>. The <em>src</em> attribute must be 
+            set to the image's source, or the location of the image. The value is often a uniform resource locator (URL) that 
+            indicates the web or local address where the image is stored. For example:<br><br>
+            <strong>
+            &ltimg src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg" /&gt<br><br>
+            </strong>
+            produces...<br><br>
+            <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg" /><br>
+            The <em>alt</em> attribute can be added to the image tag just like the <em>src</em> attribute. The value of 
+            <em>alt</em> should be a description of the image.<br><br>
+            <strong>
+            &ltimg src="file:///C:/Code/sunflowers.jpg" alt="A field of sunflowers" /&gt<br><br>
+            </strong>
+            The <em>alt</em> attribute serves the following purposes:
+            <ul>
+                <li>If an image fails to load on a web page, a user can mouse over the area originally intended for the image and
+                    read a brief description of the image.</li>
+                <li>Visually impaired users often browse the web with the aid of screen reading software. When you include the 
+                    <em>alt</em> attribute, the screen reading software can read the image’s description out loud to the visually 
+                    impaired user.</li>
+                <li>The <em>alt</em> attribute also plays a role in Search Engine Optimization (SEO), because search engines cannot 
+                    “see” the images on websites as they crawl the internet. Having descriptive alt attributes can improve the 
+                    ranking of your site.</li>
+            </ul>
+        </p>
+        <h2>Videos</h2>
+        <p> In addition to images, HTML also supports displaying videos. Like the <strong>&ltimg&gt</strong> tag, the <strong>
+            &ltvideo&gt</strong> tag requires a <em>src</em> attribute with a link to the video source. Unlike the <strong>
+            &ltimg&gt</strong> tag however, the <strong>&ltvideo&gt</strong> element requires an opening and a closing tag.<br><br>
+            <strong>
+            &ltvideo src="myVideo.mp4" width="320" height="240" controls&gtVideo not supported&lt/video&gt<br><br>
+            </strong>
+            After the <em>src</em> attribute, the <em>width</em> and <em>height</em> attributes are used to set the size of the 
+            video displayed in the browser. The <em>controls</em> attribute instructs the browser to include basic video controls: 
+            pause, play and skip. The text, “Video not supported”, between the opening and closing <strong>&ltvideo&gt</strong> tags 
+            will only be displayed if the browser is unable to load the video.
+        </p>
+        <h2>Structure</h2>
+        <p> This is an amazing video from Codecademy (through Youtube), that describes some "best practices" for structuring HTML.<br>
+            I added this link by right clicking on the video and selecting <em>Copy embed code</em>.<br>
+            <iframe width="626" height="360" src="https://www.youtube.com/embed/uxmB8MlO3m8" frameborder="0" allow="accelerometer;
+             autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+            Some new tags introduced were:
+            <ul>
+                <li><strong>&ltheader&gt&lt/header&gt</strong></li>
+                <li><strong>&ltnav&gt&lt/nav&gt</strong></li>
+                <li><strong>&ltsection&gt&lt/section&gt</strong></li>
+                <li><strong>&ltfooter&gt&lt/footer&gt</strong></li>
+                <li><strong>&ltsmall&gt&lt/small&gt</strong></li>
+            </ul>
+        </p>
+    </body>
+    <footer>
+
+    </footer>
+</html>
