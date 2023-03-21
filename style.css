@@ -1,0 +1,29 @@
+body {
+    background-color: #222;
+    color: #999;
+    max-width: 800px;
+    font-size: 1.25rem;
+}
+
+h1 {
+    color: #fff;
+    margin: 3px 10px;
+    padding: 2px 5px;
+}
+
+h2 {
+    color: #ddd;
+    margin: 3px 10px;
+    padding: 2px 5px;
+}
+
+h3 {
+    color: #bbb;
+    margin: 3px 10px;
+    padding: 2px 5px;
+}
+
+p {
+    margin: 3px 20px;
+    padding: 2px 5px;
+}
