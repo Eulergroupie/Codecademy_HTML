@@ -47,6 +47,30 @@ a {
             <a href='https://eulergroupie.github.io/Eulergroupie/' 
             title="Dave's website" target="_blank">Eulergroupie's Site</a>
         <h2>Hover States and Cursors</h2>
+            <p>Hovering over an element can trigger the text color to change with the 
+            following basic styling.
+            </p>
+<pre>
+a {
+    color: blue;
+}
+    
+a:hover {
+    color: orange;
+}</pre>
+            <p>When hovering over a link, user agent behavior is for the <i>cursor</i> to 
+            change to a pointing hand. <a href="https://www.w3.org/TR/html5/rendering.html"
+            target="_blank" title="Used to develop user agent stylesheets">HTML5 default styles</a>
+            </p>
+<pre>
+a {
+    cursor: pointer;
+}
+</pre>
+            <p>Hover state styling should not be relied on to indicate links. One shouldn't be
+            expected to scan with a mouse to find links, and mobile doesn't accomodate it.
+            </p>
+        <h2>Link States</h2>
             <p></p>
 </body>
 </html>
