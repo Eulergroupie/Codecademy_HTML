@@ -23,7 +23,7 @@
             and underlines to draw users' attention to their clickability. Clicking will 
             change it to red until the link is visited, at which time it turns purple.
             </p>
-<pre>
+<pre title="default style for an anchor is blue underlined text">
 a {
     color: blue;
     text-decoration: underline;
@@ -42,15 +42,15 @@ a {
             context or advisory text for clickable elements. Most browsers display the
             text of a <i>title</i> attribute as a tooltip.
             </p>
-<pre>
+<pre title="THIS tooltip comes from using title, how meta!">
 &lta href='https://eulergroupie.github.io/Eulergroupie/' title="Dave's website"&gtEulergroupie's Site&lt/a&gt</pre>
-            <a href='https://eulergroupie.github.io/Eulergroupie/' 
+            <a href='https://eulergroupie.github.io/Eulergroupie/'
             title="Dave's website" target="_blank">Eulergroupie's Site</a>
         <h2>Hover States and Cursors</h2>
             <p>Hovering over an element can trigger the text color to change with the 
             following basic styling.
             </p>
-<pre>
+<pre title="creating two states for link text to switch between">
 a {
     color: blue;
 }
@@ -62,13 +62,13 @@ a:hover {
             change to a pointing hand. <a href="https://www.w3.org/TR/html5/rendering.html"
             target="_blank" title="Used to develop user agent stylesheets">HTML5 default styles</a>
             </p>
-<pre>
+<pre title="it works best to place cursor here instead of the :hover rule-set">
 a {
     cursor: pointer;
 }
 </pre>
             <p>Hover state styling should not be relied on to indicate links. One shouldn't be
-            expected to scan with a mouse to find links, and mobile doesn't accomodate it.
+            expected to scan with a mouse to find links, and mobile doesn't accomodate hovering.
             </p>
         <h2>Link States</h2>
             <p></p>

@@ -39,4 +39,5 @@ p {
 pre {
     background-color: #333;
     margin: 10px 0px 8px 15px;
+    cursor: text;
 }
