@@ -71,6 +71,35 @@ a {
             expected to scan with a mouse to find links, and mobile doesn't accomodate hovering.
             </p>
         <h2>Link States</h2>
-            <p></p>
+            <p>Links have four main states: not yet clicked, hover, clicked, and visited. They are each
+            associated with a CSS pseudo-class: :link, :hover, :active, :visited .
+            </p>
+        <h2>Skeuomorphism and Flat Design</h2>
+            <p>The concept of UI elements that replicate or imitate real-life counterparts (such 
+            as buttons) is known as skeuomorphism. In contrast, flat design uses simplicity and lack
+            of clutter for its UI elements.
+            </p>
+        <h2>Buttons: Skeuomorphic styling</h2>
+            <p><button>Press Me!</button> This button is created using the following styling.</p>
+<pre>
+button {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 5px;
+}
+    
+button:hover {
+    cursor: pointer;
+}
+    
+button:active {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: black;
+    box-shadow: 0px 0px;
+}</pre>
 </body>
 </html>
